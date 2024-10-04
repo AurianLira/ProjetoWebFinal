@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários do Setor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="setor-nome"></h1>
+        <button id="abrir-modal-func" class="abrir-modal">Cadastrar Funcionário</button>
+    </header>
+
+    <main id="main-setor">
+        <h2>Funcionários Cadastrados</h2>
+        <div id="lista-funcionarios" class="grid-container"></div>
+
+        <h2>Relatos recebidos</h2>
+        <div id="lista-relatos" class="grid-container"></div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cadastrar Funcionário</h2>
+            <form id="cadastro-funcionario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="registro">Registro:</label>
+                <input type="text" id="registro" required>
+                <button type="submit" claas="submit-modal">Cadastrar Funcionário</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="detalhes.js"></script> 
+
+</body>
+</html>
+

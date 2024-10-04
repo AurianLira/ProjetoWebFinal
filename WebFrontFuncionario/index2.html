@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários do Setor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="setor-nome"></h1>
+    </header>
+
+    <main>
+        <div id="lista-funcionarios" class="grid-container"></div>
+    </main>
+
+    <div id="modal-relato" class="modal">
+        <div class="modal-content">
+            <span class="close-relato">&times;</span>
+            <h2>Relatar Problema</h2>
+            <p id="funcionario-nome"></p>
+            <div id="lista-problemas"></div>
+        </div>
+    </div>
+
+    <script src="funcionarios.js"></script> 
+
+</body>
+</html>
